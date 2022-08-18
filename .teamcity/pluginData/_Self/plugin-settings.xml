@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
-    <tools>
-        <default-versions>
-            <tool-version tool-type="kotlin.compiler" id="kotlin.compiler.1.7.0" />
-        </default-versions>
-    </tools>
+  <tools>
+    <default-versions>
+      <tool-version tool-type="kotlin.compiler" id="kotlin.compiler.1.7.0" />
+    </default-versions>
+  </tools>
 </settings>
+
