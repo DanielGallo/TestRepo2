@@ -25,11 +25,10 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 
 version = "2022.04"
 
-object MainProject : Project ({
-    name = "Main Project"
+project {
 
     buildType(Build)
-})
+}
 
 object Build : BuildType({
     name = "Build"
@@ -43,5 +42,3 @@ object Build : BuildType({
         }
     }
 })
-
-project(MainProject)
