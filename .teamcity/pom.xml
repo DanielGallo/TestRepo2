@@ -2,13 +2,7 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
   <name>TestRepo2 Config DSL Script</name>
-
-    <properties>
-        <kotlin.version>1.7.20-Beta1</kotlin.version>
-    </properties>
-
-
-    <groupId>TestRepo2</groupId>
+  <groupId>TestRepo2</groupId>
   <artifactId>TestRepo2_dsl</artifactId>
   <version>1.0-SNAPSHOT</version>
 
@@ -28,7 +22,7 @@
     </repository>
     <repository>
       <id>teamcity-server</id>
-      <url>https://danielgallo.teamcity.com/app/dsl-plugins-repository</url>
+      <url>http://teamcity.local/app/dsl-plugins-repository</url>
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
@@ -50,20 +44,18 @@
         <groupId>org.jetbrains.kotlin</groupId>
         <version>${kotlin.version}</version>
 
-        <configuration>
-            <jvmTarget>1.8</jvmTarget>
-        </configuration>
+        <configuration/>
         <executions>
           <execution>
             <id>compile</id>
-            <phase>compile</phase>
+            <phase>process-sources</phase>
             <goals>
               <goal>compile</goal>
             </goals>
           </execution>
           <execution>
             <id>test-compile</id>
-            <phase>test-compile</phase>
+            <phase>process-test-sources</phase>
             <goals>
               <goal>test-compile</goal>
             </goals>
@@ -106,23 +98,6 @@
       <groupId>org.jetbrains.kotlin</groupId>
       <artifactId>kotlin-script-runtime</artifactId>
       <version>${kotlin.version}</version>
-      <scope>compile</scope>
-    </dependency>
-      <dependency>
-          <groupId>org.jetbrains.kotlin</groupId>
-          <artifactId>kotlin-stdlib-jdk8</artifactId>
-          <version>${kotlin.version}</version>
-      </dependency>
-      <dependency>
-          <groupId>org.jetbrains.kotlin</groupId>
-          <artifactId>kotlin-test</artifactId>
-          <version>${kotlin.version}</version>
-          <scope>test</scope>
-      </dependency>
-    <dependency>
-      <groupId>org.jetbrains.kotlin</groupId>
-      <artifactId>kotlin-script-runtime</artifactId>
-      <version>1.6.21</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>
