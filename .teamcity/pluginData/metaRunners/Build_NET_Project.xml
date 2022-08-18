@@ -1,0 +1,15 @@
+<meta-runner name="Build .NET Solution">
+    <description>Builds a .NET project</description>
+    <settings>
+        <build-runners>
+            <runner name="" type="simpleRunner">
+                <parameters>
+                    <param name="script.content" value="echo &quot;Hello&quot;" />
+                    <param name="teamcity.step.mode" value="default" />
+                    <param name="use.custom.script" value="true" />
+                </parameters>
+            </runner>
+        </build-runners>
+        <requirements />
+    </settings>
+</meta-runner>
