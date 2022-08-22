@@ -34,6 +34,14 @@ object Build : BuildType({
         root(DslContext.settingsRoot)
     }
 
+    steps {
+        step {
+            name = "Test"
+            type = "BuildNetProject"
+            executionMode = BuildStep.ExecutionMode.DEFAULT
+        }
+    }
+
     triggers {
         vcs {
         }

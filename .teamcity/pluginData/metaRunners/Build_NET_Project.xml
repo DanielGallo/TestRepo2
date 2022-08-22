@@ -1,4 +1,4 @@
-<meta-runner name="Build .NET Solution">
+<meta-runner name="BuildNetProject">
     <description>Builds a .NET project</description>
     <settings>
         <build-runners>
