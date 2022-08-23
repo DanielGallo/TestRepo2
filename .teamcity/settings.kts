@@ -37,7 +37,7 @@ object Build : BuildType({
     steps {
         step {
             name = "Test"
-            type = "BuildNetProject"
+            type = "Build_NET_Project"
             executionMode = BuildStep.ExecutionMode.DEFAULT
         }
     }
